@@ -1,0 +1,329 @@
+
+
+
+
+
+    <section class="courses_details_banner bg_cover" style="background-image: url(assets/images/about_bg.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-9 col-sm-11">
+                    <div class="details_banner_content">
+                        <h4 class="title">{{formations?.intituleFormation}}</h4>
+
+                        <div class="details_media_wrapper d-flex flex-wrap">
+                            <div class="details_media d-flex align-items-center mt-30">
+                                <div class="media_image">
+                                    <img class="author" src="assets/images/author-4.jpg" alt="author">
+                                </div>
+                                <div class="media_content media-body">
+                                    <p>Teacher</p>
+                                    <h6 class="title">{{formations?.teacher}}</h6>
+                                </div>
+                            </div>
+                            <div class="details_media d-flex align-items-center mt-30">
+                                <div class="media_image">
+                                    <img class="bookmark" src="assets/images/bookmark.png" alt="bookmark">
+                                </div>
+                                <div class="media_content media-body">
+                                    <p>Categories</p>
+                                    <h6 class="title"><a href="#">{{formations?.typeFormation}}</a></h6>
+                                </div>
+                            </div>
+                            <div class="details_media d-flex align-items-center mt-30">
+                                <div class="media_image">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <div class="media_content">
+                                    <p>Review</p>
+                                    <ul class="rating">
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><span>(5 Reviews)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="courses_details_area pt-80 pb-130">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 order-lg-last">
+                    <div class="courses_details_sidebar">
+                        <div class="courses_sidebar_image">
+                            <img src="assets/images/courses-details.jpg" alt="courses details">
+                            <div class="price">
+                                <div class="price_wrapper">
+                                    <p>Price</p>
+                                    <span>{{formations?.prix}}DT</span>
+                                </div>
+                            </div>
+                            <div class="courses_btn">
+                                <a class="main-btn" href="#">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="courses_sidebar_title">
+                            <h4 class="title">Course Details</h4>
+                        </div>
+                        <div class="courses_sidebar_list">
+                            <ul class="list">
+                                <li><i class="fa fa-clock-o"></i> Duration <span>{{formations?.chargeHoraire}} h</span></li>
+                                <li><i class="fa fa-files-o"></i> Période<span>{{formations?.duree}} </span></li>
+                                <li><i class="fa fa-puzzle-piece"></i> Quizzes<span>11</span></li>
+                                <li><i class="fa fa-list"></i> Level<span>medium</span></li>
+                                <li><i class="fa fa-users"></i> Mode<span>{{formations?.mode}}</span></li>
+                                <li><i class="fa fa-globe"></i> Language<span>English</span></li>
+                            </ul>
+                            <ul class="social">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-lg-first">
+                    <div class="courses_details_content">
+                        <div class="single_courses_details  mt-40">
+                            <h4 class="courses_details_title">Overview</h4>
+<p>
+  {{formations?.description}}
+</p>                        </div>
+
+                        <div class="single_courses_details  mt-40">
+                            <h4 class="courses_details_title">Requirements</h4>
+                            <ul>
+                                <li><i class="fa fa-check"></i> {{formations?.requirements}}</li>
+                                   </ul>
+                        </div>
+                        <div class="courses_curriculum mt-50">
+                            <div class="courses_top_bar d-sm-flex justify-content-between align-items-center">
+                                <div class="courses_title">
+                                    <h4 class="courses_details_title">Overview</h4>
+                                </div>
+                                <div class="courses_meta">
+                                    <ul class="meta">
+                                        <li><i class="fa fa-files-o"></i> 23 Lectures</li>
+                                        <li><i class="fa fa-clock-o"></i> {{formations?.duree}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Week 1</a>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="curriculum_content">
+                                                <h5 class="title">Beginners level</h5>
+                                                <p>What do you think is better to receive after each lesson: a lovely looking badge or important skills you can immediately put into practice? We thought you might choose the latte</p>
+
+                                                <div class="curriculum_list">
+                                                    <span><i class="fa fa-file-o"></i> 1 video, 1 audio, 1 reading</span>
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-file-video-o"></i> Video: Greetings and Introductions</a></li>
+                                                        <li><a href="#"><i class="fa fa-book"></i> Reading: Word Types</a></li>
+                                                        <li><a href="#"><i class="fa fa-file-audio-o"></i> Audio: Listening Exercise</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Week 2</a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="curriculum_content">
+                                                <h5 class="title">Beginners level</h5>
+                                                <p>What do you think is better to receive after each lesson: a lovely looking badge or important skills you can immediately put into practice? We thought you might choose the latte</p>
+
+                                                <div class="curriculum_list">
+                                                    <span><i class="fa fa-file-o"></i> 1 video, 1 audio, 1 reading</span>
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-file-video-o"></i> Video: Greetings and Introductions</a></li>
+                                                        <li><a href="#"><i class="fa fa-book"></i> Reading: Word Types</a></li>
+                                                        <li><a href="#"><i class="fa fa-file-audio-o"></i> Audio: Listening Exercise</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Week 3</a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="curriculum_content">
+                                                <h5 class="title">Beginners level</h5>
+                                                <p>What do you think is better to receive after each lesson: a lovely looking badge or important skills you can immediately put into practice? We thought you might choose the latte</p>
+
+                                                <div class="curriculum_list">
+                                                    <span><i class="fa fa-file-o"></i> 1 video, 1 audio, 1 reading</span>
+                                                    <ul>
+                                                        <li><a href="#"><i class="fa fa-file-video-o"></i> Video: Greetings and Introductions</a></li>
+                                                        <li><a href="#"><i class="fa fa-book"></i> Reading: Word Types</a></li>
+                                                        <li><a href="#"><i class="fa fa-file-audio-o"></i> Audio: Listening Exercise</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_about mt-50">
+                            <div class="courses_top_bar">
+                                <div class="courses_title">
+                                    <h4 class="courses_details_title">About Teachers</h4>
+                                </div>
+                            </div>
+
+                            <div class="courses_about_wrapper d-flex flex-wrap">
+                                <div class="single_teachers d-flex">
+                                    <div class="author_image">
+                                        <img src="assets/images/author-5.jpg" alt="">
+                                    </div>
+                                    <div class="author_content media-body">
+                                        <h4 class="author_name">Andrew Flecher</h4>
+                                        <p>Business Studies</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="single_teachers d-flex">
+                                    <div class="author_image">
+                                        <img src="assets/images/author-6.jpg" alt="">
+                                    </div>
+                                    <div class="author_content media-body">
+                                        <h4 class="author_name">Andrew Flecher</h4>
+                                        <p>Business Studies</p>
+                                        <ul class="social">
+                                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_reviews mt-50">
+                            <div class="courses_top_bar">
+                                <div class="courses_title">
+                                    <h4 class="courses_details_title">Reviews</h4>
+                                </div>
+                            </div>
+                            <div class="courses_reviews_wrapper d-md-flex align-items-center">
+                                <div class="average_rating text-center">
+                                    <span class="rating_value">5</span>
+                                    <ul class="review_star">
+                                        <li><span><i class="fa fa-star"></i></span></li>
+                                        <li><span><i class="fa fa-star"></i></span></li>
+                                        <li><span><i class="fa fa-star"></i></span></li>
+                                        <li><span><i class="fa fa-star"></i></span></li>
+                                        <li><span><i class="fa fa-star"></i></span></li>
+                                    </ul>
+                                    <p>Rated 5 out of 5 Ratings</p>
+                                </div>
+
+                                <div class="detailed_rating text-center">
+                                    <div class="single_star ">
+                                        <div class="key">5 Stars</div>
+                                        <div class="bar">
+                                            <div class="full_bar" style="width: 100%"></div>
+                                        </div>
+                                        <div class="value">100%</div>
+                                    </div>
+                                    <div class="single_star ">
+                                        <div class="key">5 Stars</div>
+                                        <div class="bar">
+                                            <div class="full_bar" style="width: 0"></div>
+                                        </div>
+                                        <div class="value">0%</div>
+                                    </div>
+                                    <div class="single_star ">
+                                        <div class="key">5 Stars</div>
+                                        <div class="bar">
+                                            <div class="full_bar" style="width: 0"></div>
+                                        </div>
+                                        <div class="value">0%</div>
+                                    </div>
+                                    <div class="single_star ">
+                                        <div class="key">5 Stars</div>
+                                        <div class="bar">
+                                            <div class="full_bar" style="width: 0"></div>
+                                        </div>
+                                        <div class="value">0%</div>
+                                    </div>
+                                    <div class="single_star ">
+                                        <div class="key">5 Stars</div>
+                                        <div class="bar">
+                                            <div class="full_bar" style="width: 0"></div>
+                                        </div>
+                                        <div class="value">0%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_reviews_comment d-sm-flex">
+                                <div class="comment_author">
+                                    <img src="assets/images/author-6.jpg" alt="author">
+                                </div>
+                                <div class="comment_content media-body">
+                                    <h5 class="author_name">Mike Helcher</h5>
+                                    <ul class="star">
+                                        <li><span>Great</span></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>What do you think is better to receive after each lesson: a lovely looking badge or important skills you can immediately put into practice.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+
+
+
+
+
+
+
+

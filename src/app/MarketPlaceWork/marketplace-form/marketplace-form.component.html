@@ -1,0 +1,83 @@
+<div class="card my-5">
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #templateForm="ngForm" enctype="multipart/form-data">
+
+
+
+
+
+
+
+
+
+
+      <div class="form-group">
+        <label for="name">Template's name</label>
+        <input type="text" [(ngModel)]="templatess.user_name"
+          class="form-control"
+          id="user_name"
+          name="user_name"
+          placeholder="Enter the user_name "
+          required #name="ngModel">
+      </div>
+
+
+      <div class="form-group">
+        <label for="name">Template's name</label>
+        <input type="text" [(ngModel)]="templatess.name"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="Enter the name "
+          required #name="ngModel">
+      </div>
+
+
+      <div class="form-group">
+        <label for="name">Template's price</label>
+        <input type="text" [(ngModel)]="templatess.prix"
+          class="form-control"
+          id="prix"
+          name="prix"
+          placeholder="Enter the price "
+          required #name="ngModel">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Template's carateristique</label>
+        <input type="text" [(ngModel)]="templatess.carateristique"
+          class="form-control"
+          id="carateristique"
+          name="carateristique"
+          placeholder="Enter the carateristique "
+          required #name="ngModel">
+      </div>
+
+      <div class="form-group">
+        <label >categorie </label>
+           <input type="radio"     id=" categorie "  name="categorie" value="Bootstrap"   [(ngModel)]="templatess.categorie" /> Bootstrap
+           <input type="radio"     id=" categorie "  name="categorie" value="PSD"   [(ngModel)]="templatess.categorie" />PSD
+           <input type="radio"     id=" categorie "  name="categorie" value="Angular"   [(ngModel)]="templatess.categorie" />Angular
+           <input type="radio"     id=" categorie "  name="categorie" value="Html"   [(ngModel)]="templatess.categorie" />Html
+           <input type="radio"     id=" categorie "  name="categorie" value="Other"   [(ngModel)]="templatess.categorie" />Other
+
+
+          </div>
+
+
+
+          <div class="form-group">
+            <label for="path">Template's path</label>
+            <input type="file" [(ngModel)]="templatess.path"
+              class="form-control"
+              id="path"
+              name="path"
+              placeholder="Enter the path "
+              required #name="ngModel">
+          </div>
+
+      <button type="submit" [disabled]="!templateForm.form.valid"
+        class="btn btn-info">Submit</button>
+    </form>
+  </div>
+</div>

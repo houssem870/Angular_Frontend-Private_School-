@@ -1,0 +1,76 @@
+<div class="row">
+  <div class="col-md-12 grid-margin">
+    <div class="d-flex justify-content-between flex-wrap">
+      <div class="d-flex align-items-end flex-wrap">
+        <a routerLink="/AddTemplates" routerLinkActive="active"><button class="btn btn-primary mt-2 mt-xl-0"   >Add a template</button>        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-md-12 stretch-card">
+
+    <div class="card">
+      <div class="card-body">
+        <p class="card-title">Recent Templates</p>
+
+
+
+        <div class="table-responsive">
+          <table id="recent-purchases-listing" class="table">
+            <thead>
+              <tr>
+                <th>idTemplate</th>
+                <th>userName</th>
+                <th>name</th>
+                <th>prix</th>
+                <th>carateristique</th>
+                <th>categorie</th>
+                <th>path</th>
+                <th>date</th>
+
+
+
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let templates of templates">
+
+                <td>{{templates.id}}</td>
+                <td>{{templates.user_name}}</td>
+                <td>{{templates.name}}</td>
+                <td>{{templates.prix}}</td>
+                <td>{{templates.carateristique}}</td>
+                <td>{{templates.categorie}}</td>
+                <td>{{templates.path}}</td>
+                <td>{{templates.date}}</td>
+
+
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

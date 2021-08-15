@@ -1,0 +1,91 @@
+
+
+
+
+
+
+
+
+        <a routerLink="/quiz" routerLinkActive="active"><button class="btn btn-warning mt-2 mt-xl-0"   >return</button>        </a>
+
+
+          <div class="card my-5">
+            <div class="card-body">
+              <form (ngSubmit)="onSubmit()" #formationForm="ngForm">
+
+                <p class="card-title">Add a Quiz</p>
+
+
+
+
+
+
+                <div class="form-group">
+                  <label for="name"> quiz</label>
+                  <input type="text" [(ngModel)]="quizz.quiz"
+                    class="form-control"
+                    id="quiz"
+                    name="quiz"
+                    placeholder="Enter the quiz "
+                    required #name="ngModel">
+                </div>
+
+
+                <div class="form-group">
+                  <label for="name"> reponse1</label>
+                  <input type="text" [(ngModel)]="quizz.reponse1"
+                    class="form-control"
+                    id="reponse1"
+                    name="reponse1"
+                    placeholder="Enter the reponse1 "
+                    required #name="ngModel">
+                </div>
+
+
+
+
+                <div class="form-group">
+                  <label for="name"> reponse2</label>
+                  <input type="text" [(ngModel)]="quizz.reponse2"
+                    class="form-control"
+                    id="reponse2"
+                    name="reponse2"
+                    placeholder="Enter the reponse2 "
+                    required #name="ngModel">
+                </div>
+
+
+                <div class="form-group">
+                  <label for="name"> reponse3</label>
+                  <input type="text" [(ngModel)]="quizz.reponse3"
+                    class="form-control"
+                    id="reponse3"
+                    name="reponse3"
+                    placeholder="Enter the reponse3 "
+                    required #name="ngModel">
+                </div>
+
+
+
+                <div class="form-group">
+                  <label for="name"> reponseCorrecte</label>
+                  <input type="text" [(ngModel)]="quizz.reponseCorrecte"
+                    class="form-control"
+                    id="reponseCorrecte"
+                    name="reponseCorrecte"
+                    placeholder="Enter the reponseCorrecte "
+                    required #name="ngModel">
+                </div>
+
+
+                <button type="submit" [disabled]="!formationForm.form.valid"
+                  class="btn btn-info">Submit</button>
+              </form>
+            </div>
+          </div>
+
+
+
+
+
+

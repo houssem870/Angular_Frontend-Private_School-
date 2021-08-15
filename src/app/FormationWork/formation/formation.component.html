@@ -1,0 +1,99 @@
+|
+<section class="page_banner bg_cover" style="background-image: url(assets/images/about_bg.jpg)">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="banner_content text-center">
+                  <h4 class="title">Courses List</h4>
+                  <ul class="breadcrumb justify-content-center">
+                      <li><a href="#">Home</a></li>
+                      <li><a class="active" href="#">Courses</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <section class="courses_area pt-100 pb-130">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="row" >
+                <div class="col-lg-3 col-sm-6"  *ngFor="let formations of formations"  >
+                    <div class="single_courses courses_gray mt-30">
+                        <div class="courses_image">
+                            <img src="assets/images/language.png" alt="courses">
+                        </div>
+                        <div class="courses_content">
+                            <ul class="tag">
+                                <li><a href="#">{{formations.intituleFormation}}</a></li>
+
+
+                            </ul>
+                            <div class="courses_author d-flex">
+
+                                <div class="author_name media-body">
+
+
+                                </div>
+                            </div>
+
+                            <a [routerLink]="['/Details',formations.idFormation ]">See Details</a>
+
+                            <div class="meta d-flex justify-content-between">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-user-o"></i> 100</a></li>
+                                    <li><a href="#"><i class="fa fa-star-o"></i> 4.5</a></li>
+                                </ul>
+                                <span>{{formations.prix}}dT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="pagination justify-content-center">
+                        <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--====== Footer PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
